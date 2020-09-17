@@ -1,8 +1,10 @@
 #include<stdio.h>
-/*
+/**
  *main - Entry point
  *
- *Success always return 0
+ *Return: Always 0 (Success)
+ *
+ *Description: puts used to write the characters by string.
 */
 int main(void)
 {puts("\"Programming is like building a multilingual puzzle");
