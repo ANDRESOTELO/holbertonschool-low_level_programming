@@ -18,4 +18,5 @@ while (alpha_upp <= 'Z')
 putchar(alpha_upp++);
 }
 putchar('\n');
+return (0);
 }
