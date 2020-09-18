@@ -4,7 +4,6 @@
  *
  *Return: Always 0 (Success)
  *
- *Description: puts used to write the characters by string.
  */
 int main(void)
 {
