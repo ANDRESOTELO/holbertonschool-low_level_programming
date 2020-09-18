@@ -12,7 +12,7 @@ while (alpha <= 'z')
 {
 if (alpha == 'q' || alpha == 'e')
 alpha++;
-else 
+else
 putchar(alpha++);
 }
 putchar('\n');
