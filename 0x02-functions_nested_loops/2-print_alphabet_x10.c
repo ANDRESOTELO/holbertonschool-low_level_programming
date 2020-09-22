@@ -1,8 +1,7 @@
 #include "holberton.h"
 /**
- *print_alphabet - Entry point
+ *print_alphabet - print alphabet 
  *
- *print_alphabet_x10 - Entry point
  *
  */
 void print_alphabet(void)
@@ -15,7 +14,8 @@ _putchar(alpha);
 }
 
 /**
- *print_alphabet_x10  - Entry point
+ *print_alphabet_x10  - print alphabet ten times
+ *
  */
 
 void print_alphabet_x10(void)
