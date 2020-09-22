@@ -1,4 +1,4 @@
-B#include "holberton.h"
+#include "holberton.h"
 #include<ctype.h>
 /**
  *_isalpha -  checks alpha character neither lower or upper
