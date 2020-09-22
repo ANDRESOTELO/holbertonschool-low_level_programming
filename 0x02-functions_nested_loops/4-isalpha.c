@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <ctype.h>
 /**
  *_isalpha -  checks alpha character neither lower or upper
  *
@@ -12,13 +11,11 @@ int _isalpha(int c)
 {
 if (c >= 'a' && c <= 'z')
 {
-isalpha(c);
 return (1);
 }
 else
 if (c >=  'A' && c <= 'Z')
 {
-isalpha(c);
 return (1);
 }
 else
