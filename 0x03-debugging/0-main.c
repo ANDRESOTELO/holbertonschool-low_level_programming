@@ -1,3 +1,6 @@
+#ifndef HOLBERTON_H
+#define HOLBERTON_H
+
 #include "holberton.h"
 /**
  * main - tests function that prints if integer is positive or negative
