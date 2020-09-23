@@ -1,0 +1,19 @@
+#include "holberton.h"
+/**
+ *
+ *_abs - computes the absolut value of a integer
+ *
+ *
+ *Return: Succes 0
+ *
+ */
+int _abs(int)
+{
+  int a;
+
+  if (a < 0)
+{
+    return (a);
+} 
+return (0);
+}
