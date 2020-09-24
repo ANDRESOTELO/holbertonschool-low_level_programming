@@ -1,9 +1,9 @@
-#include "holberton.h"
+B#include "holberton.h"
 /**
  *_isupper - checks a uppercase character
+ *@c: character to check
+ *Return: Success 1
  *
- *Returns: Success 1
- *Returns: Otherwise 0
  */
 
 int _isupper(int c)
