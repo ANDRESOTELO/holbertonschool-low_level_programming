@@ -2,8 +2,7 @@
 
 /**
  *print_line - draws a straight line
- *
- *
+ *@n: character that changes
  *Return: success 0
  */
 
