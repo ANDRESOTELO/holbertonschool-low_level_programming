@@ -1,0 +1,14 @@
+#include "holberton.h"
+
+/**
+ *puts_half - Entry point
+ *@str: input string
+ *
+ */
+
+void puts_half(char *str)
+{
+
+
+}
+
