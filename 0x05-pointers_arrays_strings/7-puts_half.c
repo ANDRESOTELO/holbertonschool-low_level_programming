@@ -19,7 +19,7 @@ if (count % 2 == 0)
 {
 for (j = count / 2; j < count; j++)
 {
-putchar(str[j]);
+_putchar(str[j]);
 }
 }
 else
