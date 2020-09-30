@@ -30,3 +30,8 @@ void _puts(char *str);
  *print_rev - prints   string reverse
  */
 void print_rev(char *s);
+
+/**
+ *rev_string - prints reverse of string
+ */
+void rev_string(char *s);
