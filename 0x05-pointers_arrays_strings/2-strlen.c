@@ -9,8 +9,8 @@
 
 int _strlen(char *s)
 {
-  int contador;;
-  int len;
+int contador;;
+int len;
 
-  len = &s;
+len = &s;
 
