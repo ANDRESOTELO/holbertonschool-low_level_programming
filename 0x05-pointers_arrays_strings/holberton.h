@@ -45,3 +45,13 @@ void puts2(char *str);
  *puts_half - prints half of a string
  */
 void puts_half(char *str);
+
+/**
+ *print_array - prints n elements of array
+ */
+void print_array(int *a, int n);
+
+/**
+ *_strcpy - function that copies the string pointed to by src
+ */
+char *_strcpy(char *dest, char *src);
