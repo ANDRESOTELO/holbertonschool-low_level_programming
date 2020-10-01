@@ -1,9 +1,10 @@
 #include "holberton.h"
 
 /**
- *
- *
- *
+ *_strcat - Concatenate strings
+ *@dest: Pointer to Destination
+ *@src: Pointer to source
+ *Return: Dest
  */
 
 char *_strcat(char *dest, char *src)
@@ -25,5 +26,5 @@ dest[count_dest] = src[count_src];
 
 dest[count_dest] = '\0';
 
-return dest;
+return (dest);
 }
