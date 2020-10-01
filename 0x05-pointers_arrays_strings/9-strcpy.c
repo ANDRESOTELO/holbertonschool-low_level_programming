@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
  *_strcpy - copies the string pointed to by src to dest
@@ -15,5 +16,6 @@ for (count = 0; src[count] != '\0'; count++)
 {
 dest[count] = src[count];
 }
+dest[count] = '\0';
 return (dest);
 }
