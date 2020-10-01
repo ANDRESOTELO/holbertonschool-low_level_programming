@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
  *print_array - Entry point
  *@a: input pointer
@@ -17,8 +17,8 @@ printf("%d", a[x]);
 
 if (x + 1 < n)
 {
-_putchar(',');
-_putchar(' ');
+putchar(',');
+putchar(' ');
 }
 }
 printf("\n");
