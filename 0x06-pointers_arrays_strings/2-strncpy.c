@@ -16,7 +16,7 @@ for (count = 0; count < n && src[count] != '\0'; count++)
 {
 dest[count] = src[count];
 }
-if (count < n)
+for (; count < n; count++)
 {
 dest[count] = '\0';
 }
