@@ -55,3 +55,8 @@ void print_array(int *a, int n);
  *_strcpy - function that copies the string pointed to by src
  */
 char *_strcpy(char *dest, char *src);
+
+/**
+ *print_array - function that prints n elements of an array of integers.
+ */
+void print_array(int *a, int n);
