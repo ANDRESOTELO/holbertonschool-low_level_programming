@@ -18,3 +18,8 @@ char *_strncat(char *dest, char *src, int n);
  *Function that copies a string.
  */
 char *_strncpy(char *dest, char *src, int n);
+
+/**
+ *_strcmp - function that compares two strings.
+ */
+int _strcmp(char *s1, char *s2);
