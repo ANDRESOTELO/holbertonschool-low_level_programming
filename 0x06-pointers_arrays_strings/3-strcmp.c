@@ -10,29 +10,19 @@
 
 int _strcmp(char *s1, char *s2)
 {
-int count_s1; /*counts the bytes of s1*/
-int count_s2; /*counts the bytes of s2*/
+int index;
+int j = 0;
 
-for (count_s1 = 0; s1[count_s1] != '\0'; count_s1++)
+for (index = 0; s1[index] != '\0' && s2[index] != '\0'; index++)
 {
-for (count_s2 = 0; s2[count_s2] != '\0'; count_s2++)
+if (s1[index] == s2[index])
 {
-int resta = s1[count_s1] - s2[count_s2];
-
-if (resta < 0)
-{
-return (resta);
-}
-
-if (resta > 0)
-{
-return (resta);
+return (j);
 }
 else
 {
-return (0);
+return (s1[index] - s2[index]);
 }
 }
-}
-return (0);
+return (j);
 }
