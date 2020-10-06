@@ -1,0 +1,30 @@
+#include "holberton.h"
+
+/**
+ *_strspn - Entry point
+ *@s: long string
+ *@src: short string
+ *Return: Numbers of bytes
+ */
+
+unsigned int _strspn(char *s, char *accept)
+{
+int i;
+int j;
+unsigned int data = 0; /*variable que guarda las coincidencias*/
+
+for (i = 0; s[i] != '\0'; i++)
+{
+for (j = 0; accept[j] != '\0'; j++)
+{
+if (s[i] == accept[j])
+{
+data++;
+break;
+}
+}
+if (s[i] != accept[j])
+break;
+}
+return (data);
+}
