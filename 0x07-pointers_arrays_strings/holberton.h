@@ -17,3 +17,8 @@ char *_strchr(char *s, char c);
  *function that gets the length of a prefix substring.
  */
 unsigned int _strspn(char *s, char *accept);
+
+/**
+ *function that locates a substring.
+ */
+char *_strstr(char *haystack, char *needle);
