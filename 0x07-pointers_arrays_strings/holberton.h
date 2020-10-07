@@ -28,3 +28,13 @@ char *_strstr(char *haystack, char *needle);
  *function that sets the value of a pointer to a char.
  */
 void set_string(char **s, char *to);
+
+/**
+ * function that prints the chessboard.
+ */
+void print_chessboard(char (*a)[8]);
+
+/**
+ *This program prints a character 
+ */
+int _putchar(char c);
