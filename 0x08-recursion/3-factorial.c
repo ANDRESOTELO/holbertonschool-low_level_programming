@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *_strlen_recursion - Entry point
+ *factorial - Entry point
  *
  *@n: Entry number
  *
