@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+/**
+ *main - Entry point
+ *@argc: Argument count
+ *@argv: Argument value
+ *Return: Success Always 0
+ *
+ */
+
+int main(int argc, char *argv[])
+{
+	(void)*argv;
+
+	printf("%d\n", argc);
+        return (0);
+}
