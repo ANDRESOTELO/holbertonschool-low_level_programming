@@ -1,29 +1,29 @@
 #include <stdio.h>
 /**
- * main - fizz buzz for numbers 1 to 100
+ * main - fizz buzz function
  * Return: 0 always
  */
 
 int main(void)
 {
-	int fizz;
+	int a;
 
-	fizz = 1;
-	while (fizz <= 100)
+	a = 1;
+	while (a <= 100)
 
 	{
 
-		if (fizz % 3 == 0 && fizz % 5 == 0)
+		if (a % 3 == 0 && a % 5 == 0)
 			printf("FizzBuzz");
-		else if (fizz % 3 == 0)
+		else if (a % 3 == 0)
 			printf("Fizz");
-		else if (fizz % 5 == 0)
+		else if (a % 5 == 0)
 			printf("Buzz");
 		else
-			printf("%d", fizz);
-		if (fizz != 100)
+			printf("%d", a);
+		if (a != 100)
 			printf(" ");
-		fizz++;
+		a++;
 	}
 	printf("\n");
 
