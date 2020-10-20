@@ -5,8 +5,7 @@
 
 /**
  *free_dog - Function that frees dogs.
- *@str: size of array
- *Return: A pointer to the duplicated string.
+ *@d: structure.
  */
 
 void free_dog(dog_t *d)
