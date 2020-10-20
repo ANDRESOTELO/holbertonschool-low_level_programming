@@ -65,7 +65,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	firulais->age = age;
 
-	firulais->owner = owner;
+	firulais->owner = _strdup(owner);
 	if (firulais->owner == NULL)
 	{
 		free(firulais->owner);
