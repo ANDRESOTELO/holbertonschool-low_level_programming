@@ -10,13 +10,13 @@
  * Description: Data about name, age and owner for a dog
  */
 
-struct dog
+typedef struct dog
 {
 
 	char *name;
 	float age;
 	char *owner;
-};
+} dog_t;
 
 /* Function that initialize a variable of type struct dog*/
 
