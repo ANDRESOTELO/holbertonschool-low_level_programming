@@ -32,6 +32,7 @@ char *_strdup(char *str)
 	{
 		dest[i] = str[i];
 	}
+	dest[i] = '\0';
 	return (dest);
 }
 
@@ -67,7 +68,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	firulais->owner = _strdup(owner);
 	if (firulais->owner == NULL)
 	{
-		free(firulais->owner);
+		free(firulais->name);
 		free(firulais);
 		return (NULL);
 	}
