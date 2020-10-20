@@ -18,8 +18,17 @@ struct dog
 	char *owner;
 };
 
+/**
+ * Function that initialize a variable of type struct dog
+ */
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 
+
+/**
+ * Function that prints a struct dog
+ */
+
+void print_dog(struct dog *d);
 
 #endif /*_DOG_H_*/
