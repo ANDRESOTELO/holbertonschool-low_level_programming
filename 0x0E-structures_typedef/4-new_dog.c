@@ -22,6 +22,7 @@ char *_strdup(char *str)
 	for (; str[i] != '\0' ; i++)
 	{
 	}
+	i++; /*agrega el caracter nulo al string*/
 	dest = malloc(sizeof(*dest) * i + 1);
 
 	if (dest == NULL)
@@ -32,7 +33,6 @@ char *_strdup(char *str)
 	{
 		dest[i] = str[i];
 	}
-	dest[i] = '\0';
 	return (dest);
 }
 
