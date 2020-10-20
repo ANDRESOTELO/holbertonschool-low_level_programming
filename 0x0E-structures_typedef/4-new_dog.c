@@ -33,16 +33,14 @@ char *_strdup(char *str)
 		dest[i] = str[i];
 	}
 	return (dest);
-
 }
-
 
 /**
  *new_dog - function that creates a new dog.
  *@name: Second member
  *@age: Third member
  *@owner: Fourth member
- *Return: NULL if function fails
+ *Return: dog_t type
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -56,18 +54,18 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	firulais->name = _strdup(name);
-	if (firulais->name == NULL)
+	if (firulais->name == 0)
 	{
 		free(firulais);
-		return (NULL);
+		return (0);
 	}
 	firulais->age = age;
 	firulais->owner = _strdup(owner);
-	if (firulais->owner == NULL)
+	if (firulais->owner == 0)
 	{
 		free(firulais);
 		free(firulais->name);
-		return (NULL);
+		return (0);
 	}
 	return (firulais);
 }
