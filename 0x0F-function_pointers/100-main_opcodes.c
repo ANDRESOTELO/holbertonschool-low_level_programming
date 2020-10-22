@@ -3,10 +3,9 @@
 
 /**
  * print_opcodes - print the opcodes of this program
- * @a: address of funtion of main
- * @n: number of bytes
+ * @a: address of main func
+ * @n: bytes
  *
- * Return: void
  */
 
 void print_opcodes(char *a, int n)
@@ -24,10 +23,10 @@ void print_opcodes(char *a, int n)
 
 /**
  * main - prints the opcodes of its own main function
- * @argc: number of arguments passed to the function
- * @argv: array of pointers to arguments
+ * @argc: number of args passed to the function
+ * @argv: array of pointers to args
  *
- * Return: always O
+ * Return: Success always 0
  */
 int main(int argc, char **argv)
 {
