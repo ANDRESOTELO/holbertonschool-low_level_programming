@@ -1,5 +1,5 @@
-#ifndef _CALC_H_
-#define _CALC_H_
+#ifndef _3_CALC_H_
+#define _3_CALC_H_
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -30,4 +30,4 @@ int (*get_op_func(char *s))(int, int);
 
 
 
-#endif /*_CALC_H_*/
+#endif /*_3_CALC_H_*/
