@@ -22,7 +22,8 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 
-	num1 = atoi(argv[1]);/*convierto lo que pongo en la posicion 1 del argv*/
+	num1 = atoi(argv[1]);
+/*convierto lo que pongo en la posicion 1 del argv*/
 	num2 = atoi(argv[3]);
 	oper = argv[2];
 
@@ -32,7 +33,8 @@ int main(int argc, char **argv)
 		exit(100);
 	}
 
-	func = get_op_func(oper);/*aqui estoy haciendo el llamado de la función*/
+	func = get_op_func(oper);
+/*aqui estoy haciendo el llamado de la función*/
 
 /*if wrong operator*/
 	if (func == NULL)
@@ -44,6 +46,7 @@ int main(int argc, char **argv)
 	result = func(num1, num2);
 	printf("%d\n", result);
 
-	return (EXIT_SUCCESS);/*Macro de salida*/
+	return (EXIT_SUCCESS);
+/*Macro de salida*/
 }
 
