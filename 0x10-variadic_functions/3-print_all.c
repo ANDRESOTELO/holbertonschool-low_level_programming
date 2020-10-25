@@ -17,23 +17,23 @@ void print_all(const char * const format, ...)
 	{
 		switch (format[j])
 		{
+		case 'c':
+			printf("%c", va_arg(list, int));
+			break;
+		case'i':
+			i = va_arg(list. int);
+			printf("%d", i);
+			break;
+		case 'f':/*float*/
+			f = va_arg(list, double);
+			printf("%f", f);
+			break;
 		case 's':/*string*/
 			s = va_arg(list, char *);
 			if (s)
 				printf("%s", s);
 			else
 				printf("(nil)");
-			break;
-		case 'i':/*integer*/
-			i = va_arg(list, int);
-			printf("%d", i);
-			break;
-		case 'c':/*char*/
-			printf("%c", va_arg(list, int));
-			break;
-		case 'f':/*float*/
-			f = va_arg(list, double);
-			printf("%f", f);
 			break;
 		default:
 			break;
