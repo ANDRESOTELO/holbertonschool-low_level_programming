@@ -8,6 +8,7 @@ void print_all(const char * const format, ...)
 	int i, j;/*j string position*/
 	double f;
 	char *s;
+
 	va_list list;
 
 	va_start(list, format);
