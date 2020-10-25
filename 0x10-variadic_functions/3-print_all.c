@@ -21,7 +21,7 @@ void print_all(const char * const format, ...)
 			printf("%c", va_arg(list, int));
 			break;
 		case'i':
-			i = va_arg(list. int);
+			i = va_arg(list, int);
 			printf("%d", i);
 			break;
 		case 'f':/*float*/
