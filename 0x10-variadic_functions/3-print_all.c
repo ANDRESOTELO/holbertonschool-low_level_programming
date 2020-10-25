@@ -5,12 +5,13 @@
  */
 void print_all(const char * const format, ...)
 {
-	int i, j = 0;/*j string position*/
+	int i, j;/*j string position*/
 	double f;
 	char *s;
 	va_list list;
 
 	va_start(list, format);
+	j = 0;
 	while (format && format[j])/*while format exist*/
 	{
 		switch (format[j])
@@ -27,8 +28,7 @@ void print_all(const char * const format, ...)
 			printf("%d", i);
 			break;
 		case 'c':/*char*/
-			c = va_arg(list, int);
-			printf("%c", c);
+			printf("%c", va_arg(list, int));
 			break;
 		case 'f':/*float*/
 			f = va_arg(list, double);
