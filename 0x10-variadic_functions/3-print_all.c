@@ -30,10 +30,9 @@ void print_all(const char * const format, ...)
 			break;
 		case 's':/*string*/
 			s = va_arg(list, char *);
-			if (s)
-				printf("%s", s);
-			else
-				printf("(nil)");
+			if (!s)
+				s = "(nil)";
+			printf("%s", s);
 			break;
 		default:
 			break;
