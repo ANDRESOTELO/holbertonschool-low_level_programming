@@ -4,7 +4,7 @@ section .data
 
 	section .text
 
-	global main
+global main
 
 main:
 	mov rax, 1
