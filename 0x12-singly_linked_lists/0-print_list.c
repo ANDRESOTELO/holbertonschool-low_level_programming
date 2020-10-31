@@ -16,7 +16,7 @@ size_t print_list(const list_t *h)
 	{
 		return (0);
 	}
-	else 
+	else
 	{
 		for (n_nodes = 0; h != NULL; n_nodes++)
 		{
