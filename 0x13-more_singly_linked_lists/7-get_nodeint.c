@@ -13,19 +13,15 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	unsigned int count;
 
 	/*if head exists go to the for and iterates searching index == count*/
-	if (head != NULL)
+	for (count = 0; temp_head != NULL; count++)
 	{
-		for (count = 0; head != NULL; count++)
+		/*when count is equal to index, return the node*/
+		if (count == index)
 		{
-			/*when count is equal to index, return the node*/
-			if (count == index)
-			{
-				return (temp_head);
-			}
-			/*now temp_head is equal to the next node*/
-			temp_head = temp_head->next;
+			return (temp_head);
 		}
-		return (NULL);
+		/*now temp_head is equal to the next node*/
+		temp_head = temp_head->next;
 	}
 	return (NULL);
 }
