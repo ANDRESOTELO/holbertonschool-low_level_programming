@@ -28,8 +28,9 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 				return (temp_head);
 			}
 			/*now temp_head is equal to the next node*/
-			temp_head = (temp_head)->next;
+			temp_head = temp_head->next;
 		}
+		return (NULL);
 	}
 	return (NULL);
 }
