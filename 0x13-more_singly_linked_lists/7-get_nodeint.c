@@ -12,11 +12,6 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	listint_t *temp_head = head;
 	unsigned int count;
 
-	/*if index is equal to 0 return head*/
-	if (index == 0)
-	{
-		return (temp_head);
-	}
 	/*if head exists go to the for and iterates searching index == count*/
 	if (head != NULL)
 	{
