@@ -28,6 +28,9 @@ int main(int argc, char *argv[])
 	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 00664);
 	/*file_from is the file where read finds the characters*/
 	file_read = read(file_from, buffer, 1024);
+	if (file_read == -1)
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]),
+			exit(98);
 	while (file_read != 0)
 	{
 		file_write = write(file_to, buffer, file_read);
