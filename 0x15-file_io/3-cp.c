@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]),
 			exit(98);
 	if (argv[2] == NULL)
-		dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]),
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]),
 			exit(99);
 	/*create file_from and file_to. Both are int type*/
 	file_from = open(argv[1], O_RDONLY);
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 	{
 		file_write = write(file_to, buffer, file_read);
 		if (file_write == -1 || file_write != file_read)
-			dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]),
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]),
 				exit(99);
 		file_read = read(file_from, buffer, 1024);
 		if (file_read == -1)
