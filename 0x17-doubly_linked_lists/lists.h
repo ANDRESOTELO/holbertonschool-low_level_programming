@@ -32,4 +32,7 @@ size_t dlistint_len(const dlistint_t *h);
 /*Function that adds a new node at the beginning*/
 dlistint_t *add_dnodeint(dlistint_t **head, const int n);
 
+/*Function that adds a new node at the end of a dlistint_t list.*/
+dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
+
 #endif /*_LISTS_H_*/
