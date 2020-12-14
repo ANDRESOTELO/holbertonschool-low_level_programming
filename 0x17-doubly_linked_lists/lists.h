@@ -35,4 +35,19 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n);
 /*Function that adds a new node at the end of a dlistint_t list.*/
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
 
+/*Function that frees a dlistint_t list.*/
+void free_dlistint(dlistint_t *head);
+
+/*function that returns the nth node of a dlistint_t linked list.*/
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
+
+/*function that returns the sum of all the data (n) of a linked list*/
+int sum_dlistint(dlistint_t *head);
+
+/*Function that inserts a new node at given position*/
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
+
+/*Function that deletes the node at index index of a dlistint_t linked list.*/
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
+
 #endif /*_LISTS_H_*/
