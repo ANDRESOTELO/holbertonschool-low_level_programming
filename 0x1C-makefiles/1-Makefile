@@ -1,0 +1,6 @@
+# Variables
+CC = gcc
+SRC = main.c holberton.c
+# Explicit main rule
+all: $(SRC)
+	$(CC) -Wall $(SRC) -o holberton
