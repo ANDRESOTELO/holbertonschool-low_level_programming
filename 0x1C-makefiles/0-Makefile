@@ -1,0 +1,7 @@
+# Explicit main rule
+all: holberton
+# When type "make", it executes the rule holberton 
+holberton: main.o holberton.o
+	gcc -Wall main.o holberton.o -o holberton
+main.o : main.c m.h
+holberton.o : holberton.c m.h
