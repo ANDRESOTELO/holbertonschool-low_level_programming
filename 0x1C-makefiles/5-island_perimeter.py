@@ -14,7 +14,7 @@ def island_perimeter(grid):
     for fila in range(filas):
         for celda in range(columnas):
             if grid[fila][celda] == 1:
-                # ask for up dir 
+                # ask for up dir
                 if fila == 0 or grid[fila - 1][celda] == 0:
                     perimeter += 1
                 # ask for down dir
