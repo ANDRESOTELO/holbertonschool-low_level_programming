@@ -12,13 +12,13 @@ all: $(OBJ)
 	$(CC) -Wall $(OBJ) -o $(NAME)
 # Deletes all temporary files along with the executable
 clean:
-	$(RM) *~ holberton
+	$(RM) *~ $(NAME)
 # deletes the object files
 oclean:
-	$(RM) main.o holberton.o
+	$(RM) $(OBJ)
 # deletes all temporary files, the executable, and the object files
 fclean:
-	$(RM) *~ holberton
-	$(RM) main.o holberton.o
+	$(RM) *~ $(NAME)
+	$(RM) $(OBJ)
 # forces recompilation of all source files
 re: oclean all
