@@ -12,38 +12,43 @@
 int interpolation_search(int *array, size_t size, int value)
 {
 	unsigned int low = 0, high = size - 1;
-	/* To determine the probe position */
 	size_t pos = 0;
-	unsigned int i = 0;
 	char *output = "Value checked array";
 
 	if (array)
 	{
-		pos = low + (((double)(high - low) / (array[high] - array[low]))
-			     * (value - array[low]));
-
-		if (pos >= size)
-			printf("%s[%ld] is out of range\n", output, pos);
-		else
+		while ((array[high] != array[low]) && (value >= array[low]) &&
+		       (value <= array[high]))
 		{
-			printf("Value checked array[%ld] = [%d]\n", pos,
-			       array[pos]);
+			pos = low + (((double)(high - low) /
+				      (array[high] - array[low]))
+				     * (value - array[low]));
 
-			if (array[pos] == value)
+			printf("%s[%ld] = [%d]\n", output, pos, array[pos]);
+			if (array[pos] < value)
 			{
-				return (pos);
+				low = pos + 1;
+			}
+			else if (value < array[pos])
+			{
+				high = pos - 1;
 			}
 			else
-			{
-				for (i = pos + 1; i <= high; i++)
-				{
-					printf("%s[%d] = [%d]\n", output, i,
-					       array[i]);
-					if (array[i] == value)
-						return (i);
-				}
-			}
+				return (pos);
 		}
+		pos = low + (((double)(high - low) / (array[high] - array[low]))
+			     * (value - array[low]));
+		if (pos >= size)
+		{
+			printf("%s[%ld] is out of range\n", output, pos);
+			return (-1);
+		}
+		if (value == array[low])
+		{
+			return (low);
+		}
+		else
+			return (-1);
 	}
 	return (-1);
 }
