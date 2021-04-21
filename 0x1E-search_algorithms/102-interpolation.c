@@ -35,7 +35,7 @@ int interpolation_search(int *array, size_t size, int value)
 			}
 			else
 			{
-				for (i = pos + 1; i < size; i++)
+				for (i = pos + 1; i <= high; i++)
 				{
 					printf("%s[%d] = [%d]\n", output, i,
 					       array[i]);
