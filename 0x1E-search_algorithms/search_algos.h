@@ -25,5 +25,10 @@ int binary_search(int *array, size_t size, int value);
  */
 int jump_search(int *array, size_t size, int value);
 
+/*
+ * Function that searches for a value in a sorted array of integers using the
+ * Interpolation search algorithm
+ */
+int interpolation_search(int *array, size_t size, int value);
 
 #endif /*_SEARCH_ALGOS_H_*/
